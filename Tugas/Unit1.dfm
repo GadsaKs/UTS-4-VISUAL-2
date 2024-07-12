@@ -1,10 +1,10 @@
 object Form1: TForm1
-  Left = 995
-  Top = 136
+  Left = 779
+  Top = 50
   Width = 499
   Height = 526
   Caption = 'SATUAN'
-  Color = clBtnFace
+  Color = clAppWorkSpace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -79,6 +79,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 2
+    OnClick = bSIMPANClick
   end
   object bEDIT: TButton
     Left = 144
@@ -93,6 +94,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 3
+    OnClick = bEDITClick
   end
   object bHAPUS: TButton
     Left = 248
@@ -107,6 +109,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 4
+    OnClick = bHAPUSClick
   end
   object bBATAL: TButton
     Left = 352
@@ -121,6 +124,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 5
+    OnClick = bBATALClick
   end
   object DBGrid1: TDBGrid
     Left = 40
@@ -134,6 +138,7 @@ object Form1: TForm1
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
   end
   object Button1: TButton
     Left = 32
@@ -148,6 +153,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 7
+    OnClick = Button1Click
   end
   object eCARI_NAMA: TEdit
     Left = 224
@@ -155,5 +161,6 @@ object Form1: TForm1
     Width = 225
     Height = 21
     TabOrder = 8
+    OnChange = eCARI_NAMAChange
   end
 end
